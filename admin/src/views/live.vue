@@ -1,5 +1,5 @@
 <template>
-  <div>vedio</div>
+  <div>live</div>
 </template>
 
 <script>

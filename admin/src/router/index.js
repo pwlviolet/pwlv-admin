@@ -24,14 +24,19 @@ const routes = [
           path: '/user',
           name: 'user',
           component: ()=>import('../views/user.vue')
+      },
+      {
+        path: '/vedio',
+        name: 'vedio',
+        component: ()=>import('../views/vedio.vue')
+      },
+      {
+        path: '/live',
+        name: 'live',
+        component: ()=>import('../views/live.vue')
       }
   ]
   },
-  {
-    path: '/user',
-    name: 'user',
-    component: ()=>import('../views/user.vue')
-  }, 
   {
     path: '/login',
     name: 'login',

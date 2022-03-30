@@ -9,7 +9,7 @@
             <el-input type="password" v-model="loginData.password" ></el-input>
         </el-form-item>
         <div class="item-button">
-            <el-button type="primary" @click="submitForm('loginForm')">登录</el-button>
+            <el-button type="primary" @click="submitForm('loginForm')" >登录</el-button>
         </div>
         <div class="regist_box">
         <p class="regist"  @click="jump()">没有账号?点击注册</p>

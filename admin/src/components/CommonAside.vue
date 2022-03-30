@@ -11,7 +11,7 @@
       <span slot="title">{{item.label}}</span>
     </template>
     <el-menu-item-group v-for="(subItem,subIndex) in item.children" :key="subItem.path">
-      <el-menu-item :index="subIndex">
+      <el-menu-item @click="clickMenu(subItem)" :index="subIndex">
         <i :class="'el-icon-'+subItem.icon"></i>
       <span>{{subItem.label}}</span></el-menu-item>
     </el-menu-item-group>
@@ -71,14 +71,14 @@
                 name: 'vedio',
                 label: '视频',
                 icon: 'video-play',
-                url: 'upload/Video'
+                url: 'video'
               },
               {
-                path:'/Camera',
-                name: 'Camera',
+                path:'/live',
+                name: 'live',
                 label: '直播',
                 icon: 'video-camera',
-                url: 'upload/Camera'
+                url: 'live'
               }
             ]
           }
